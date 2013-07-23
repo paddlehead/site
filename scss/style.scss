@@ -93,7 +93,7 @@ a {
 	text-decoration: none;
 }
 
-a:active, a:hover, a:visited {
+a:link, a:active, a:hover, a:visited {
 	color: #446aa8;
 }
 
@@ -184,7 +184,7 @@ nav a {
 	color: #fff;
 	font-size: 20px;
 	letter-spacing: 1px;
-	a, a:visited, a:active {
+	a, a:visited, a:active	  {
 		color: #fff;
 	}
 	a:hover {
