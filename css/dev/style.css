@@ -248,12 +248,12 @@ nav a {
   letter-spacing: 1px;
 }
 /* line 187, ../../scss/style.scss */
-.directions a:hover {
-  color: black !important;
+.directions a, .directions a:visited, .directions a:active {
+  color: #fff;
 }
 /* line 190, ../../scss/style.scss */
-.directions a:visited {
-  color: #fff;
+.directions a:hover {
+  color: black !important;
 }
 
 /* line 195, ../../scss/style.scss */

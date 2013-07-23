@@ -184,11 +184,11 @@ nav a {
 	color: #fff;
 	font-size: 20px;
 	letter-spacing: 1px;
+	a, a:visited, a:active {
+		color: #fff;
+	}
 	a:hover {
 		color: #000!important;
-	}
-	a:visited {
-		color: #fff;
 	}
 }
 
