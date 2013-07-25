@@ -1,5 +1,5 @@
 name: Your New Jekyll Site
 pygments: true
-url: "http://paddlehead.github.io/site"
-baseurl: "/site"
+url: "http://paddleheadboards.com"
+#baseurl: "../"
 permalink: none
