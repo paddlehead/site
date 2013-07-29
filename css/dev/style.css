@@ -190,31 +190,32 @@ a:link, a:active, a:hover, a:visited {
   height: auto;
   text-align: center;
   display: inline-block;
+  margin-top: -40px;
 }
 
-/* line 141, ../../scss/style.scss */
+/* line 142, ../../scss/style.scss */
 section h1 {
   display: inline-block;
   font-size: 35px;
 }
-/* line 144, ../../scss/style.scss */
+/* line 145, ../../scss/style.scss */
 section h1.amp {
   font-size: 30px;
   vertical-align: top;
 }
 
-/* line 151, ../../scss/style.scss */
+/* line 152, ../../scss/style.scss */
 nav a {
   font-size: 20px;
 }
 
-/* line 155, ../../scss/style.scss */
+/* line 156, ../../scss/style.scss */
 .arrow_box {
   position: relative;
   background: #ff3300;
 }
 
-/* line 159, ../../scss/style.scss */
+/* line 160, ../../scss/style.scss */
 .arrow_box:after {
   top: 100%;
   border: solid transparent;
@@ -225,7 +226,7 @@ nav a {
   pointer-events: none;
 }
 
-/* line 169, ../../scss/style.scss */
+/* line 170, ../../scss/style.scss */
 .arrow_box:after {
   border-color: rgba(255, 51, 0, 0);
   border-top-color: #ff3300;
@@ -234,38 +235,38 @@ nav a {
   margin-left: -20px;
 }
 
-/* line 177, ../../scss/style.scss */
+/* line 178, ../../scss/style.scss */
 .map-bar {
   width: 275px;
   margin: 5px 0 20px;
   padding: 8px 0;
 }
 
-/* line 183, ../../scss/style.scss */
+/* line 184, ../../scss/style.scss */
 .directions {
   color: #fff;
   font-size: 20px;
   letter-spacing: 1px;
 }
-/* line 187, ../../scss/style.scss */
+/* line 188, ../../scss/style.scss */
 .directions a, .directions a:visited, .directions a:active {
   color: #fff;
 }
-/* line 190, ../../scss/style.scss */
+/* line 191, ../../scss/style.scss */
 .directions a:hover {
   color: black !important;
 }
 
-/* line 195, ../../scss/style.scss */
+/* line 196, ../../scss/style.scss */
 #footer {
   text-align: center;
 }
-/* line 198, ../../scss/style.scss */
+/* line 199, ../../scss/style.scss */
 #footer .contact {
   font-size: 10px;
 }
 
-/* line 203, ../../scss/style.scss */
+/* line 204, ../../scss/style.scss */
 .clear {
   overflow: hidden;
   clear: both;
