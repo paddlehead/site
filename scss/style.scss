@@ -40,7 +40,7 @@ $background-grid-color: pink;
 
 $grids: 2 1;
 
-$grids: add-grid(1 at 300px);
+$grids: add-grid(1 at 320px);
 $grids: add-grid(2 1 at 421px);
 //$grids: add-grid(2 8 2 at 900px);
 //$grids: add-grid(1 3 5 7 9 at 1100px);
@@ -48,12 +48,16 @@ $grids: add-grid(2 1 at 421px);
 //$grids: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
 $gutters: .125;
 
-$rule1: 2px solid black;
-$rule2: 2px solid black;
+$rule1: 2px solid #707070;
+$rule2: 2px solid #707070;
 
 //$social-icons: sprite-map("social-icons/*.png");
 
 @import "_mixin.scss";
+
+// Color
+
+$main: rgb(68, 106, 168);
 
 /*****************************************************************************/
 /*
@@ -103,11 +107,17 @@ a:link, a:active, a:hover, a:visited {
 		z-index: 100;
 		li {
 			float: left;
-			padding-right: 10px;
+			margin-right: 5px;
 			a.social-icons-facebook {
 				display: inline-block;
 				height:$height + $sprite-pad;
 				width:$width + $sprite-pad;			
+			}
+			&.pipe { 
+				background-color: rgba(68, 106, 168, .5); 
+				width: 3px; 
+				height: 35px; 
+				margin: 0 10px 0 0; 
 			}
 			a.social-icons-twitter {
 				display: inline-block;
@@ -117,12 +127,25 @@ a:link, a:active, a:hover, a:visited {
 			span {
 				display: none;
 			}
+			&.tel-top {
+				font-weight: 700;
+				button {
+					width: 100%;
+					background-color: $main;
+					color: white;
+					font-size: 10px;
+					font-weight: 700;
+					letter-spacing: 3px;
+					text-align: center;
+					padding: 2px 0px;
+					border: none;
+				}
+			}
 		}
 		li:last-child {
 			float: right;
-			font-size: 20px;
-			font-weight: bold;
-			padding: 5px 0 0px;
+			padding: 0px;
+			margin: 0px;
 			
 		}
 	}
@@ -143,9 +166,26 @@ section {
 	h1 {
 		display: inline-block;
 		font-size: 35px;
+		color: $main;
 		&.amp {
 			font-size: 30px;
 			vertical-align: top;
+		}
+	}
+	.subscribe {
+		display: inline-block;
+		margin: 5px 0;
+		fieldset {
+			border: 2px solid #707070;
+			border-radius: 5px;
+			padding: 10px;
+			margin: 0;
+		}
+		legend {
+			color: #707070;
+			font-weight: 700;
+			text-align: left;
+			padding: 0 3px;
 		}
 	}
 }
@@ -156,7 +196,7 @@ nav a {
 
 .arrow_box {
 	position: relative;
-	background: #ff3300;
+	background: $main;
 }
 .arrow_box:after {
 	top: 100%;
@@ -170,7 +210,7 @@ nav a {
 
 .arrow_box:after {
 	border-color: rgba(255, 51, 0, 0);
-	border-top-color: #ff3300;
+	border-top-color: $main;
 	border-width: 20px;
 	left: 50%;
 	margin-left: -20px;
@@ -179,7 +219,7 @@ nav a {
 .map-bar {
 	width: 275px;
 	margin: 5px 0 20px;
-	padding: 8px 0;
+	padding: 5px 0;
 }
 
 .directions {
@@ -208,3 +248,11 @@ nav a {
 	
 }
 
+// Breakpoints
+
+@include breakpoint(300px) {
+	//@include grid-span(1,1);
+	.pipe {
+		display: none;
+	}
+}

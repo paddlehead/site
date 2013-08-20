@@ -14,6 +14,14 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="{{ site.url }}/css/dev/style.css"> <!-{{ site.baseurl }}->
 
+		<link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			#mc_embed_signup { clear: left; font: 14px Helvetica,Arial,sans-serif; }
+			#mc_embed_signup input.email { display: inline-block; width: 0; min-width: 150px; margin: 0; padding: 5px 0; }
+			#mc_embed_signup form { padding: 0; }
+			#mc_embed_signup input.button { display: inline-block; height: 24px; font-size: 14px; line-height: 24px; margin: 0; border-radius: 0px; }
+		</style>
+
     </head>
     <body>
 
@@ -21,9 +29,13 @@
 		<div class="header">
 			<div class="social">
 				<ul>
-					<li><a href="https://www.facebook.com/PaddleHeadBoards?fref=ts" title="Facebook" class="social-icons-facebook"><span>Fb</span></a></li> 
+					<li><a href="https://www.facebook.com/PaddleHeadBoards?fref=ts" title="Facebook" class="social-icons-facebook"><span>Fb</span></a></li>
 					<!--li><a href="#" title="Twitter" class="social-icons-twitter"><span>Twitter</span></a></li-->
-					<li class="tel"><a href="tel://5187554502">(518) 755-4502</a></li>
+					<li class="pipe"></li>
+					<li class="tel-top">
+						<button>Telephone</button><br>
+						<a href="tel://5187554502">(518) 755-4502</a>
+					</li>
 				</ul>
 			</div>
 			<div class="clear"></div>
@@ -41,9 +53,22 @@
 			</section>
            
 			<nav><a class="" href="#">Paddleboards</a> <a class="" href="#">Kayaks</a> <a class="" href="#">Bicycles</a></nav>
-
+			
 			<section>
-				<h1 class="map-bar directions arrow_box"><a href="#location">one convenient location</a></h1>
+				<div class="subscribe" id="mc_embed_signup">
+					<h3></h3>
+					<form action="http://PaddleHeadBoards.us7.list-manage1.com/subscribe/post?u=10fbb7165413c0f27979ccadd&amp;id=70776ac1da" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<fieldset>
+						<legend>Get on our mailing list</legend>
+					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email address here" required>
+					<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+					</fieldset>
+					</form>
+				</div>
+			</section>
+			
+			<section>
+				<h1 class="map-bar directions arrow_box"><a href="#location">conveniently located</a></h1>
 			</section>
 			
 			<div class="map" id="location">
@@ -56,7 +81,7 @@
  			
 		<div id="footer">
 			<div class="contact">
-				13 Water Street, Athens, NY 12015 (518) 755-4502 <br>paddleheadboards at gmail dot com 
+				13 North Water Street, Athens, NY 12015 (518) 755-4502 <br>paddleheadboards at gmail dot com 
 			</div>
 		</div>
 		<script type="text/javascript" src="//use.typekit.net/mhk4lrr.js"></script>
