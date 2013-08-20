@@ -1,6 +1,6 @@
 name: Paddlehead Boards
 pygments: true
-#url: "http://paddleheadboards.com"
-url: "http://localhost:4000"
+url: "http://paddleheadboards.com"
+#url: "http://localhost:4000"
 #baseurl: "../"
 permalink: none
